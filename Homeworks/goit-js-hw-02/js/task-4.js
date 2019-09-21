@@ -1,8 +1,8 @@
-const formatString = function(String) {
-  const array = String;
-  if (String.length <= 40) {
-    return String;
-  } else return String.slice(0, 41) + '...';
+const formatString = function(words) {
+  const array = words;
+  if (words.length <= 40) {
+    return words;
+  } else return words.slice(0, 41) + '...';
 };
 
 console.log(formatString('Curabitur ligula sapien, tincidunt non.'));
