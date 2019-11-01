@@ -1,5 +1,5 @@
 // Получить массив имен пользователей по полу (поле gender).
-const { users } = require('./users.js');
+import users from './users.js';
 
 const getUsersWithGender = (users, gender) => {
   return users.filter(user => user.gender === gender);

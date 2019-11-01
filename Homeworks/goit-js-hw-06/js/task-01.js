@@ -1,5 +1,5 @@
 //Получить массив имен всех пользователей (поле name).
-const { users } = require('./users.js');
+import users from './users.js';
 
 const getUserNames = users => {
   const listOfNames = users.map(users => users.name);

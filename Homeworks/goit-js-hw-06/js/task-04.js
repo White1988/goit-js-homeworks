@@ -1,5 +1,5 @@
 // Получить массив только неактивных пользователей (поле isActive).
-const { users } = require('./users.js');
+import users from './users.js';
 
 const getInactiveUsers = users => {
   return users.filter(user => !user.isActive);

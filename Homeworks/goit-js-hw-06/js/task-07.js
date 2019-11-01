@@ -1,5 +1,5 @@
 // Получить общую сумму баланса (поле balance) всех пользователей.
-const { users } = require('./users.js');
+import users from './users.js';
 
 const calculateTotalBalance = users => {
   const sum = users.reduce((acc, value) => acc + value.balance, 0);

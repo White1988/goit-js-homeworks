@@ -1,5 +1,5 @@
 // Массив имен (поле name) людей, отсортированных в зависимости от количества их друзей (поле friends)
-const { users } = require('./users.js');
+import users from './users.js';
 
 const getNamesSortedByFriendsCount = users => {
   return users

@@ -1,5 +1,5 @@
 // Получить массив всех умений всех пользователей (поле skills), при этом не должно быть повторяющихся умений и они должны быть отсортированы в алфавитном порядке.
-const { users } = require('./users.js');
+import users from './users.js';
 
 const getSortedUniqueSkills = users => {
   return users.reduce((allSkills, user) => {
