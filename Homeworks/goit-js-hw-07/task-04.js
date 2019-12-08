@@ -13,6 +13,7 @@ const state = {
     refs.spanOfCounter.textContent = state.counterValue;
   }
 };
-const handleClicks = ({ target }) => state[target.dataset.action]();
+// const handleClicks = ({ target }) => state[target.dataset.action]();
+const handleClicks = e => state[e.target.dataset.action]();
 refs.spanOfCounter.textContent = state.counterValue;
 refs.blockWithButtons.addEventListener('click', handleClicks);

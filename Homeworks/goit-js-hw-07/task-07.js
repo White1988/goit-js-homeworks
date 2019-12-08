@@ -7,4 +7,4 @@ function changeFontSize({ target }) {
   refs.text.style.cssText = `font-size: ${target.value}px`;
 }
 
-refs.range.addEventListener('click', changeFontSize);
+refs.range.addEventListener('input', changeFontSize);
